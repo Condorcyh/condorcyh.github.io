@@ -11,12 +11,12 @@
   <meta name="description" content="水平有限，算法拙劣，仅供参考 整理者：Condor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++程序设计第一次作业笔记">
-<meta property="og:url" content="http://yoursite.com/2020/03/18/C-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="http://yoursite.com/2020/03/18/C-%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Condor的博客">
 <meta property="og:description" content="水平有限，算法拙劣，仅供参考 整理者：Condor">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-03-18T11:35:23.000Z">
-<meta property="article:modified_time" content="2020-03-18T11:49:58.218Z">
+<meta property="article:modified_time" content="2020-03-24T16:52:14.926Z">
 <meta property="article:author" content="Condor">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
@@ -147,7 +147,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-C-程序设计第一次作业笔记" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-C-第一次作业笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -159,7 +159,7 @@
   
 
         
-        <a href="/2020/03/18/C-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/" class="archive-article-date">
+        <a href="/2020/03/18/C-%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/" class="archive-article-date">
   	<time datetime="2020-03-18T11:35:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-18</time>
 </a>
         
@@ -171,7 +171,7 @@
 <p>整理者：Condor</p>
 <a id="more"></a>
 
-<h3 id="1-最大的罗马数字"><a href="#1-最大的罗马数字" class="headerlink" title="1. 最大的罗马数字"></a>1. 最大的罗马数字</h3><p>问题描述：</p>
+<h2 id="1-最大的罗马数字"><a href="#1-最大的罗马数字" class="headerlink" title="1. 最大的罗马数字"></a>1. 最大的罗马数字</h2><p>问题描述：</p>
 <p>罗马数字包含以下七种字符：I，V，X，L，C，D和M</p>
 <blockquote>
 <p>字符        数值</p>
@@ -213,7 +213,7 @@
 
 <br>
 
-<h3 id="2-X-的-Y-次方"><a href="#2-X-的-Y-次方" class="headerlink" title="2. X 的 Y 次方"></a>2. X 的 Y 次方</h3><p>求 x 的 y 次方（ x 和 y 都是整数，y$\geq$0），超出 int 类型则输出 -1</p>
+<h2 id="2-X-的-Y-次方"><a href="#2-X-的-Y-次方" class="headerlink" title="2. X 的 Y 次方"></a>2. X 的 Y 次方</h2><p>求 x 的 y 次方（ x 和 y 都是整数，y$\geq$0），超出 int 类型则输出 -1</p>
 <p>示例1：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：x &#x3D; 3, y &#x3D; 2   （等号两边有空格，逗号只有右边有空格）</span><br><span class="line">输出：9</span><br></pre></td></tr></table></figure>
 
@@ -224,7 +224,7 @@
 
 <p>算法思路：</p>
 <ol>
-<li>结果 res 类型声明成 long long，2^31^-1 声明成 0x7FFFFFFF </li>
+<li>结果 res 类型声明成 long long，$2^{31}$-1 声明成 0x7FFFFFFF </li>
 <li>计算过程大致为，建立一个循环 y 次的 for 循环，每次乘上 x ，后面再来一个判断，如果绝对值大于 MAX 则输出 -1</li>
 <li>接下来处理输入，用 getline，第一次到 ‘,’ 停止，x 可能为负数，所以还要判断一下符号；第二个 getline 到 ‘=’ 停止</li>
 </ol>
@@ -235,7 +235,7 @@
 
 <br>
 
-<h3 id="3-生成字符集的子集"><a href="#3-生成字符集的子集" class="headerlink" title="3. 生成字符集的子集"></a>3. 生成字符集的子集</h3><p>给定一个字符集（字符集不为空）和一个字符，输出集合包含该字符的所有子集。给定的字符一定存在于集合中</p>
+<h2 id="3-生成字符集的子集"><a href="#3-生成字符集的子集" class="headerlink" title="3. 生成字符集的子集"></a>3. 生成字符集的子集</h2><p>给定一个字符集（字符集不为空）和一个字符，输出集合包含该字符的所有子集。给定的字符一定存在于集合中</p>
 <p><strong>说明</strong>：输出按字符数量顺序和ascii码排列</p>
 <p>示例1：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入: &#123;a,b&#125;,a </span><br><span class="line">输出: &#123;a&#125;,&#123;a,b&#125;</span><br></pre></td></tr></table></figure>
@@ -259,7 +259,7 @@
 
 <br>
 
-<h3 id="4-密钥字符串格式化"><a href="#4-密钥字符串格式化" class="headerlink" title="4. 密钥字符串格式化"></a>4. 密钥字符串格式化</h3><p>给定一个密钥字符串S，只包含字母、数字以及 ‘-‘（破折号）。N 个 ‘-‘ 将字符串分成了 N+1 组。给定一个数字 K，重新格式化字符串，除了第一个分组以外，每个分组要包含 K 个字符，第一个分组至少要包含 1 个字符。两个分组之间用 ‘-‘（破折号）隔开，并且将所有的小写字母转换为大写字母</p>
+<h2 id="4-密钥字符串格式化"><a href="#4-密钥字符串格式化" class="headerlink" title="4. 密钥字符串格式化"></a>4. 密钥字符串格式化</h2><p>给定一个密钥字符串S，只包含字母、数字以及 ‘-‘（破折号）。N 个 ‘-‘ 将字符串分成了 N+1 组。给定一个数字 K，重新格式化字符串，除了第一个分组以外，每个分组要包含 K 个字符，第一个分组至少要包含 1 个字符。两个分组之间用 ‘-‘（破折号）隔开，并且将所有的小写字母转换为大写字母</p>
 <p>给定非空字符串 S 和数字 K，按照上面描述的规则进行格式化</p>
 <p>示例1：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">输入：5F3Z-2e-9-w     </span><br><span class="line">     4</span><br><span class="line">     </span><br><span class="line">输出：5F3Z-2E9W</span><br><span class="line"></span><br><span class="line">解释：字符串 S 被分成了两个部分，每部分 4 个字符；     </span><br><span class="line">     注意，两个额外的破折号需要删掉</span><br></pre></td></tr></table></figure>
@@ -284,7 +284,7 @@
 
 <br>
 
-<h3 id="5-素数之和"><a href="#5-素数之和" class="headerlink" title="5. 素数之和"></a>5. 素数之和</h3><p>求从 n 到 m 的素数的和（包括 n 和 m），输入是 n 和 m（空格隔开），输出是素数的和</p>
+<h2 id="5-素数之和"><a href="#5-素数之和" class="headerlink" title="5. 素数之和"></a>5. 素数之和</h2><p>求从 n 到 m 的素数的和（包括 n 和 m），输入是 n 和 m（空格隔开），输出是素数的和</p>
 <p>不考虑和越界的情况。</p>
 <p>示例1：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">输入：[1 5]</span><br><span class="line">输出：10</span><br></pre></td></tr></table></figure>
@@ -303,7 +303,7 @@
 
 <br>
 
-<h3 id="6-二进制中-1-的个数"><a href="#6-二进制中-1-的个数" class="headerlink" title="6. 二进制中 1 的个数"></a>6. 二进制中 1 的个数</h3><p>计算出一个整数的二进制中有多少个 1（给定的整数一定在整型范围内）</p>
+<h2 id="6-二进制中-1-的个数"><a href="#6-二进制中-1-的个数" class="headerlink" title="6. 二进制中 1 的个数"></a>6. 二进制中 1 的个数</h2><p>计算出一个整数的二进制中有多少个 1（给定的整数一定在整型范围内）</p>
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入：8</span><br><span class="line">输出：1</span><br><span class="line">解释：8 的二进制表示为 1000，其中 1 的个数为 1 ，输出 1</span><br></pre></td></tr></table></figure>
 
@@ -318,7 +318,7 @@
 
 <br>
 
-<h3 id="7-字符统计"><a href="#7-字符统计" class="headerlink" title="7. 字符统计"></a>7. 字符统计</h3><p>读取给定的内容，统计其中每个字母出现的次数，并将得到的次数按照从小到大的次序排列。其 中统计的结果不区分字母大小写</p>
+<h2 id="7-字符统计"><a href="#7-字符统计" class="headerlink" title="7. 字符统计"></a>7. 字符统计</h2><p>读取给定的内容，统计其中每个字母出现的次数，并将得到的次数按照从小到大的次序排列。其 中统计的结果不区分字母大小写</p>
 <p>注：字符变量按ASCII码大写字母的储存值比小写字母小32。 只统计字母，不统计任何其他元素，包括标点符号、空格等</p>
 <p>示例：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">输入: </span><br><span class="line">3 </span><br><span class="line">I am a student of NanJing University. </span><br><span class="line"></span><br><span class="line">输出：</span><br><span class="line">[1,1,1,1,1,1,1,1,1,2,2,2,3,3,4,5]</span><br><span class="line"></span><br><span class="line">解释：</span><br><span class="line">输入描述：输入的第一行表示给定内容的行数n，接下来的n行则代表输入的内容，有可能是空行。n非负</span><br><span class="line"></span><br><span class="line">输出包含 &quot;[&quot; 和 &quot;]&quot;，若没有字母，输出就是&quot;[]&quot;</span><br></pre></td></tr></table></figure>
@@ -337,7 +337,7 @@
 
 <br>
 
-<h3 id="8-三角形种类判断-类型-switch，case"><a href="#8-三角形种类判断-类型-switch，case" class="headerlink" title="8. 三角形种类判断[类型]switch，case"></a>8. 三角形种类判断[类型]switch，case</h3><p>三角形种类判断 </p>
+<h2 id="8-三角形种类判断-类型-switch，case"><a href="#8-三角形种类判断-类型-switch，case" class="headerlink" title="8. 三角形种类判断[类型]switch，case"></a>8. 三角形种类判断[类型]switch，case</h2><p>三角形种类判断 </p>
 <p>从控制台读取6个整数输入，分别为三角形3个顶点的坐标。 </p>
 <p>即：x1,y1,x2,y2,x3,y3。 </p>
 <p>通过顶点坐标判断三角形类型。 </p>
@@ -369,7 +369,7 @@
 
 <br>
 
-<h3 id="9-一年中的第几天-类型-switch或者表驱动"><a href="#9-一年中的第几天-类型-switch或者表驱动" class="headerlink" title="9. 一年中的第几天[类型]switch或者表驱动"></a>9. 一年中的第几天[类型]switch或者表驱动</h3><p>计算给定日期是一年当中的第几天，如果给定的日期无效，则打印 -1。</p>
+<h2 id="9-一年中的第几天-类型-switch或者表驱动"><a href="#9-一年中的第几天-类型-switch或者表驱动" class="headerlink" title="9. 一年中的第几天[类型]switch或者表驱动"></a>9. 一年中的第几天[类型]switch或者表驱动</h2><p>计算给定日期是一年当中的第几天，如果给定的日期无效，则打印 -1。</p>
 <p>注： </p>
 <p>闰年是公历中的名词。闰年分为普通闰年和世纪闰年。 </p>
 <p>普通闰年：公历年份是 4 的倍数的，且不能被 100 整除的，是普通闰年。（如2004年就是闰年）； </p>
@@ -392,7 +392,7 @@
 
 <br>
 
-<h3 id="10-笨阶乘"><a href="#10-笨阶乘" class="headerlink" title="10. 笨阶乘"></a>10. 笨阶乘</h3><p>通常，正整数 n 的阶乘是所有小于或等于 n 的正整数的乘积。</p>
+<h2 id="10-笨阶乘"><a href="#10-笨阶乘" class="headerlink" title="10. 笨阶乘"></a>10. 笨阶乘</h2><p>通常，正整数 n 的阶乘是所有小于或等于 n 的正整数的乘积。</p>
 <p>例如，factorial(10) = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1。 </p>
 <p>相反，我们设计了一个笨阶乘 clumsy：在整数的递减序列中，我们以一个固定顺序的操作符序列来依次替换原有的乘法 操作符：乘法(*)，除法(/)，加法(+)和减法(-)。 </p>
 <p>例如，clumsy(10) = 10 * 9 / 8 + 7 - 6 * 5 / 4 + 3 - 2 * 1。然而，这些运算仍然使用通常的算术运算顺序：我们在任何加、减步骤之前执行所有的乘法和除法步骤，并且按从左到右处理乘法和除法步骤。 </p>
@@ -498,7 +498,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/18/C-%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/03/18/C-%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%9C%E4%B8%9A%E7%AC%94%E8%AE%B0/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -678,11 +678,11 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">感受, 心得</a>
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
+                <a href="javascript:void(0)" class="js-tag color2">感受, 心得</a>
               </li>
              
               <li class="article-tag-list-item">
